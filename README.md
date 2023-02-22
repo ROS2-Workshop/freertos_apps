@@ -95,5 +95,8 @@ ros2 run micro_ros_agent micro_ros_agent --dev '/usr/ttyUSB0'
 cd ~/ros2_ws
 source install/local_setup.sh
 ros2 topic list
+```
+
+```bash
 ros2 echo [TOPIC/NODE]
 ```
