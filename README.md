@@ -58,7 +58,7 @@ ros2 run micro_ros_setup create_firmware_ws.sh freertos esp32
 Check port ID, normally returns 'ttyUSB0':
 
 ```bash
-ls /usr | grep 'tty'
+ls /usr | grep 'USB'
 ```
 
 ```bash
