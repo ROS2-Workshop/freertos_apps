@@ -25,7 +25,6 @@ mkdir -p ~/ros2_ws && cd ~/ros2_ws
 echo 'export UROS_CUSTOM_APP_FOLDER=~/ros2_ws/src/apps' >> ~/.bashrc
 source ~/.bashrc
 git clone https://github.com/ROS2-Workshop/micro-ros-demos.git ~/ros2_ws/src/apps
-touch ~/ros2_ws/src/apps/COLCON_IGNORE
 ```
 
 ---
