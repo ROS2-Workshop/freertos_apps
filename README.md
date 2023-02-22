@@ -3,7 +3,7 @@
 This repo contains apps demos that are based on freertos and tested for ESP32-devkit-C with the purpose of being a starting point for futher development and workshops demonstrations.
 
 
-## Quick start
+## Quick start using int32_publisher
 
 
 ### Dependencies
