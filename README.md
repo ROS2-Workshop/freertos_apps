@@ -75,7 +75,7 @@ Edit the app and once satifsfied build and flash the app, only need for repeatin
 ros2 run micro_ros_setup build_firmware.sh
 ros2 run micro_ros_setup flash_firmware.sh
 ```
-**NOTE: You must cancel the micro_ros_agent before flashing, else the USB port will be busy**
+**NOTE: You must cancel the micro_ros_agent before flashing if started, else the USB port will be busy, some esp32's are repuired to hold reset button on during the first 1-2 seconds when flashing.**
 
 
 ## 6. Building micro-ROS-Agent in - terminal window 2
