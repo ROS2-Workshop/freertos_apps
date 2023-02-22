@@ -79,7 +79,7 @@ ros2 run micro_ros_setup flash_firmware.sh
 
 
 ## 6. Building micro-ROS-Agent in - terminal window 2
-
+The agent acts like a translator between micro-ROS and ROS2
 
 ```bash
 cd ~/ros2_ws
