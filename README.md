@@ -98,5 +98,5 @@ ros2 topic list
 ```
 
 ```bash
-ros2 echo [TOPIC/NODE]
+ros2 topic echo <topic_name>
 ```
