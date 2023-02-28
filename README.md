@@ -22,9 +22,6 @@ sudo apt install python3-rosdep
 ## 1. Clone and setup
 ```bash
 mkdir -p ~/ros2_ws && cd ~/ros2_ws
-echo 'export UROS_CUSTOM_APP_FOLDER=~/ros2_ws/src/apps' >> ~/.bashrc
-source ~/.bashrc
-git clone https://github.com/ROS2-Workshop/micro-ros-demos.git ~/ros2_ws/src/apps
 ```
 
 ---
@@ -65,6 +62,9 @@ sudo chown $USER /dev/ttyUSB0
 ```
 
 ```bash
+cd ~/ros2_ws/src
+ln -s ../firmware/freertos_apps/apps/ .
+cd ~/ros2_ws
 ros2 run micro_ros_setup configure_firmware.sh int32_publisher -t serial --dev '/dev/ttyUSB0'
 ```
 
