@@ -61,10 +61,8 @@ Check port ID, normally returns 'ttyUSB0':
 
 ```bash
 ls /dev | grep 'USB'
- sudo usermod -a -G dialout $USER
+sudo chown $USER /dev/ttyUSB0
 ```
-
-LOGOUT och IN again to be able to access ports without sudo
 
 ```bash
 ros2 run micro_ros_setup configure_firmware.sh int32_publisher -t serial --dev '/dev/ttyUSB0'
