@@ -89,7 +89,7 @@ cd ~/ros2_ws
 ros2 run micro_ros_setup create_agent_ws.sh
 ros2 run micro_ros_setup build_agent.sh
 source install/local_setup.sh
-ros2 run micro_ros_agent micro_ros_agent --dev '/dev/ttyUSB0'
+ros2 run micro_ros_agent micro_ros_agent serial --dev '/dev/ttyUSB0'
 ```
 
 ## 7. Listen to node - terminal window 3
