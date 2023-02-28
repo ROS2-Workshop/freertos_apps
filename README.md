@@ -64,7 +64,7 @@ ls /dev | grep 'USB'
 ```
 
 ```bash
-ros2 run micro_ros_setup configure_firmware.sh int32_publisher -t serial --dev '/usr/ttyUSB0'
+ros2 run micro_ros_setup configure_firmware.sh int32_publisher -t serial --dev '/dev/ttyUSB0'
 ```
 
 ---
@@ -88,7 +88,7 @@ cd ~/ros2_ws
 ros2 run micro_ros_setup create_agent_ws.sh
 ros2 run micro_ros_setup build_agent.sh
 source install/local_setup.sh
-ros2 run micro_ros_agent micro_ros_agent --dev '/usr/ttyUSB0'
+ros2 run micro_ros_agent micro_ros_agent --dev '/dev/ttyUSB0'
 ```
 
 ## 7. Listen to node - terminal window 3
