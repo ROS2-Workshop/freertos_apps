@@ -37,6 +37,8 @@ For futher details about micro-ros-setup, see [micro-ros-setup](https://github.c
 cd ~/ros2_ws
 source /opt/ros/$ROS_DISTRO/setup.bash
 git clone -b $ROS_DISTRO https://github.com/micro-ROS/micro_ros_setup.git src/micro_ros_setup
+sudo rosdep init
+rosdep update
 rosdep update && rosdep install --from-paths src --ignore-src -y
 colcon build
 source install/local_setup.bash
