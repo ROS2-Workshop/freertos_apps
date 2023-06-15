@@ -19,19 +19,13 @@ Some other prerequisites needed for building a firmware using this package are:
 ```
 sudo apt install python3-rosdep
 ```
-## 1. Clone and setup
-```bash
-mkdir -p ~/ros2_ws && cd ~/ros2_ws
-```
-
----
  
-## 2. Setup micro_ros_setup 
+## 1. Setup micro_ros_setup 
 
 For futher details about micro-ros-setup, see [micro-ros-setup](https://github.com/micro-ROS/micro_ros_setup)
 
 ```bash
-cd ~/ros2_ws
+mkdir -p ~/ros2_ws && cd ~/ros2_ws
 source /opt/ros/$ROS_DISTRO/setup.bash
 git clone -b $ROS_DISTRO https://github.com/micro-ROS/micro_ros_setup.git src/micro_ros_setup
 sudo rosdep init
@@ -42,7 +36,7 @@ source install/local_setup.bash
 ```
 ---
 
-## 3. Create firmware
+## 2. Create firmware
 ```bash
 # Creating a FreeRTOS + micro-ROS firmware workspace for esp23 micro-controller
 ros2 run micro_ros_setup create_firmware_ws.sh freertos esp32
@@ -50,7 +44,7 @@ ros2 run micro_ros_setup create_firmware_ws.sh freertos esp32
 
 ---
 
-## 4. Configure firmware
+## 3. Configure firmware
 
 **Connect ESP32 to USB port in PC** 
 
@@ -70,7 +64,7 @@ ros2 run micro_ros_setup configure_firmware.sh int32_publisher -t serial --dev '
 
 ---
 
-## 5. Building & flash micro-ROS firmware in - terminal window 1
+## 4. Building & flash micro-ROS firmware in - terminal window 1
 
 Edit the app and once satifsfied build and flash the app, only need for repeating step 5 and 6 during development.
 
@@ -81,7 +75,7 @@ ros2 run micro_ros_setup flash_firmware.sh
 **NOTE: You must cancel the micro_ros_agent before flashing if started, else the USB port will be busy and also some esp32's are repuired to hold reset button on during the first 1-2 seconds when flashing.**
 
 
-## 6. Building micro-ROS-Agent in - terminal window 2
+## 5. Building micro-ROS-Agent in - terminal window 2
 The agent acts like a translator between micro-ROS and ROS2
 
 ```bash
@@ -92,7 +86,7 @@ source install/local_setup.sh
 ros2 run micro_ros_agent micro_ros_agent serial --dev '/dev/ttyUSB0'
 ```
 
-## 7. Listen to node - terminal window 3
+## 6. Listen to node - terminal window 3
 
 ```bash
 cd ~/ros2_ws
