@@ -19,13 +19,18 @@ Some other prerequisites needed for building a firmware using this package are:
 ```
 sudo apt install python3-rosdep
 ```
+
+## 1. Setup and clone demo
+```bash
+mkdir -p ~/dev_ws && cd ~/dev_ws
+git clone https://github.com/ROS2-Workshop/micro-ros-demos src/mROS
+```
  
 ## 1. Setup micro_ros_setup 
 
 For futher details about micro-ros-setup, see [micro-ros-setup](https://github.com/micro-ROS/micro_ros_setup)
 
 ```bash
-mkdir -p ~/ros2_ws && cd ~/ros2_ws
 source /opt/ros/$ROS_DISTRO/setup.bash
 git clone -b $ROS_DISTRO https://github.com/micro-ROS/micro_ros_setup.git src/micro_ros_setup
 sudo rosdep init
