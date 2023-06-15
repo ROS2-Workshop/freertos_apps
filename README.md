@@ -62,9 +62,6 @@ sudo chown $USER /dev/ttyUSB0
 ```
 
 ```bash
-cd ~/ros2_ws/src
-ln -s ../firmware/freertos_apps/apps/ .
-cd ~/ros2_ws
 ros2 run micro_ros_setup configure_firmware.sh int32_publisher -t serial --dev '/dev/ttyUSB0'
 ```
 
