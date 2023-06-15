@@ -25,6 +25,7 @@ sudo apt install python3-rosdep
 mkdir -p ~/dev_ws && cd ~/dev_ws
 git clone https://github.com/ROS2-Workshop/micro-ros-demos src/apps
 echo "export UROS_CUSTOM_APP_FOLDER=$(pwd)/src/apps" >> ~/.bashrc
+source ~/.bashrc
 ```
  
 ## 1. Setup micro_ros_setup 
