@@ -19,7 +19,7 @@ Some other prerequisites needed for building a firmware using this package are:
 ```
 mkdir -p ~/dev_ws
 cd ~/dev_ws
-docker run -it --net=host -v ~/dev_ws:/dev_ws /dev:/dev -w /dev_Ws --privileged ros:humble
+docker run -it --net=host -v ~/dev_ws:/dev_ws -v /dev:/dev -w /dev_ws --privileged ros:humble
 ```
 
 ## 1. Setup and clone demo
